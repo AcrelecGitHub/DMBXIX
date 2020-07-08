@@ -1,0 +1,81 @@
+<div class="sides-list" *ngIf="title === 'Sides'">
+  <h1 class="title">
+    {{page.Title}}
+  </h1>
+  <div *ngFor="let button of buttons|slice:0:3">
+    <div class="sides-product">
+      <img class="sides__img" src={{imagePath+button.Picture}} alt="">
+      <div class="content-area">
+        <div class="main-title">
+          <h2 class="product__title">{{button.Caption}}</h2>
+        </div>
+        <div class="item-description">
+          <div class="single">
+            <span class="sides__cal">{{button.Calories}}</span>
+            <span class="sides__price">{{button.Price / 100 | currency}}</span>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="drinks-list" *ngIf="title === 'Cold Drinks'">
+  <h1 class="drinks-title">
+    Take a sip of these
+  </h1> 
+  <div *ngFor="let button of buttons|slice:0:3">
+    <div class="drinks-product">
+      <img class="drinks__img" src={{imagePath+button.Picture}} alt="">
+      <div class="content-area">
+        <div class="main-title">
+          <h2 class="drinks__caption">{{button.Caption}}</h2>
+        </div>
+        <div class="item-description">
+          <div class="single">            
+            <span class="drinks_cal">{{button.Calories}}</span>
+            <span class="drinks_price">{{button.Price / 100 | currency}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="salads-list col-sm-12" *ngIf="title === 'Salads'">
+  <img class="lt--salad" src="{{crispyFreshness}}" alt="crispyFreshness">
+  <img class="rt--salad" src="{{sweetFreshness}}" alt="sweetFreshness">
+  <h1 class="salads-title">
+    {{page.Title}}
+  </h1> 
+  <div class="col-sm-4 salads-product padding-0" *ngFor="let button of buttons|slice:0:2">
+    <h2 class="salads__caption">{{button.Caption}}</h2>
+    <img class="salads__img" src={{imagePath+button.Picture}} alt="">
+    <div class="item-description">
+      <span class="salads_cal">{{button.Calories}}</span>
+      <span class="salads_price">{{button.Price / 100 | currency}}</span>      
+    </div>
+  </div> 
+</div>
+
+<div class="desserts-list col-sm-12" *ngIf="title === 'Desserts'">
+  <h1 class="title">
+    {{page.Title}}
+  </h1> 
+  <div class="col-sm-5" *ngFor="let button of buttons">
+    <div class="product desserts_width">
+      <img class="desserts__img" src={{imagePath+button.Picture}} alt="">
+      <div class="content-area">
+        <div class="main-title">
+          <h2 class="product__title">{{button.Caption}}</h2>
+        </div>
+        <div class="item-description">
+          <div class="single">
+            <span class="sides__cal">{{button.Calories}}</span>
+            <span class="sides__price">{{button.Price / 100 | currency}}</span>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>

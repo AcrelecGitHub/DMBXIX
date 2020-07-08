@@ -1,0 +1,87 @@
+<!-- <ng-template #openChoicesTemplate>
+  <div class="open-choices">
+      <div class="open-choice" *ngFor="let choice of openChoices | slice:0:4" [class.highlighted]="isHighlightedChoice(choice)">
+          <p class="open-choice-title" [innerHtml]="choice.name"></p>
+          <cod-infinite-carousel class="choices" [class.selected]="isChoiceSelected(choice)" [items]="choice.items" [interval]="isChoiceSelected(choice) ? 0 : animationInterval">
+              <ng-template let-product>
+                  <cod-choice-item class="choice-product" [class.selected]="product.selected" [product]="product"></cod-choice-item>
+              </ng-template>
+          </cod-infinite-carousel>
+      </div>
+  </div>
+</ng-template>
+<ng-template #dynamicProductsTemplate>
+  <cod-infinite-carousel class="dynamic-products" [items]="dynamicProducts" [interval]="animationInterval">
+      <ng-template let-product>
+          <cod-product-item [product]="product"></cod-product-item>
+      </ng-template>
+  </cod-infinite-carousel>
+</ng-template>
+<ng-template #loyaltyProductsTemplate>
+  <cod-infinite-carousel class="loyalty-products" [items]="loyaltyProducts" [interval]="animationInterval">
+      <ng-template let-product>
+          <cod-loyalty-item [product]="product"></cod-loyalty-item>
+      </ng-template>
+  </cod-infinite-carousel>
+</ng-template>
+
+<ng-container *ngIf="!openChoices?.length; else openChoicesTemplate">
+  <ng-container *ngIf="!loyaltyProducts?.length; else loyaltyProductsTemplate">
+      <ng-container *ngIf="!dynamicProducts?.length; else dynamicProductsTemplate">
+          <cod-slideshow class="banners" [slides]="banners"></cod-slideshow>
+      </ng-container>
+  </ng-container>
+</ng-container>
+
+<img class="side-banner" src="/assets/images/loyalty-waiting_background.png" *ngIf="!loyaltyData && !toastMessage && !orderViewExpanded"/>
+<cod-loyalty-view class="loyalty-view" *ngIf="(loyaltyData || toastMessage) && !orderViewExpanded"
+  [data]="loyaltyData" [message]="toastMessage">
+</cod-loyalty-view>
+<cod-loyalty-view-small class="loyalty-view-small" *ngIf="loyaltyData && orderViewExpanded"
+  [data]="loyaltyData">
+</cod-loyalty-view-small>
+
+<cod-order-view class="order-view" [class.expanded]="orderViewExpanded" [class.loyalty]="loyaltyData"
+  [orderView]="orderView">
+</cod-order-view>
+
+<div class="order-view-items" #itemsContainer [class.expanded]="orderViewExpanded" [class.loyalty]="loyaltyData">
+  <cod-order-item *ngFor="let item of orderView?.items | slice:orderViewHiddenItemsCount" [orderItem]="item">
+  </cod-order-item>
+</div> -->
+
+<section>
+  <div class="header">
+    <p>Freshly made burgers</p>
+  </div>
+</section>
+
+<section *ngIf="pages" class="container">
+  <div class="row">
+      <div *ngFor="let page of pages" class="col-md-6">
+          {{page.Picture}}  
+          <img src="{{page.Picture}}" alt="image">          
+      </div>
+  </div>
+</section>
+
+<ng-container >
+  <ng-container >
+      <ng-container >
+          <cod-slideshow class="banners" [slides]="banners"></cod-slideshow>
+      </ng-container>
+  </ng-container>
+</ng-container>
+<img class="side-banner" src="/assets/images/img_wait.png" />
+<cod-loyalty-view class="loyalty-view" >
+</cod-loyalty-view>
+<cod-loyalty-view-small class="loyalty-view-small">
+</cod-loyalty-view-small>
+
+<cod-order-view class="order-view" >
+</cod-order-view>
+
+<div class="order-view-items" >
+  <cod-order-item >
+  </cod-order-item>
+</div>

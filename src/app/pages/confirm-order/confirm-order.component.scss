@@ -1,0 +1,250 @@
+:host {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+}
+
+.background {
+    position: absolute;
+    right: 20rem;
+    top: 20rem;
+}
+
+.instructions {
+    position: absolute;
+    top: 620rem;
+    left: 29rem;
+    right: 29rem;
+
+    border-radius: 2px;
+    box-shadow: 0 0 20px 0 #c8c8c8;
+
+    padding: 35px;
+
+    font-family: 'BlockBE-Condensed', 'Arial';
+    font-weight: 700;
+    font-size: 80rem;
+    text-align: center;
+    color: #101010;
+}
+
+.instructions-image {
+    position: absolute;
+    width: 200rem;
+    height: 340rem;
+    left: 440rem;
+    top: 860rem;
+}
+
+.order-view {
+    position: absolute;
+    top: 1315rem;
+    left: 25rem;
+    width: 485rem;
+    height: 575rem;
+
+    &.expanded {
+        width: 1030rem;
+    }
+}
+
+.order-view-items {
+
+    position: absolute;
+    top: 1315rem;
+    left: 25rem;
+    width: 485rem;
+    height: calc(575rem - 76rem);
+
+    &.expanded {
+        width: 1030rem;
+    }
+
+    &:before {
+        content: '';
+        height: 69rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    overflow: hidden;
+
+    & :not(:last-child):after {
+        content: '';
+        position: absolute;
+        left: 114.5rem;
+        right: 16rem;
+        bottom: 0;
+        height: 1rem;
+        background-color: rgba($color: #CBCBCB, $alpha: 0.5);
+    }
+}
+
+
+.order__list {
+    width: 115%;
+    z-index: 3;
+    .checkout-list {
+        height: 1230rem;
+        overflow: auto;
+        margin-top: 40rem;
+        margin-right: 0;
+        margin-left: 0;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    h1{
+        font-size: 68rem;
+        margin-left: 40rem;
+        width: 50%;
+        font-weight: bold;
+    }
+    ul {
+        font-size: 40rem;
+        margin-left: -40rem;
+        margin-bottom: 0;
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        max-height: 1150rem;
+    }
+    li {
+        list-style: none;
+        padding-bottom: 30rem;
+        height: 10%;
+        padding-right: 10%;
+        // display: inline-block;
+        .item-modifiers {
+            margin-bottom: 0rem;
+            text-transform: capitalize;            
+            margin-left: 130rem;
+            margin-top: 10rem;
+            padding-bottom: 0rem;
+        }
+
+        //item modifiers full width 
+        .item-modifiers-fw {
+            font-size: 30rem;
+        }
+        
+        //item modifiers half width 
+        .item-modifiers-hw {
+            font-size: 20rem;
+        }
+
+        li:after {
+            display: none; /* This will put the pseudo element on its own line. */
+        }
+    }
+    li:last {
+        border-bottom: none
+    }
+    li:after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 90%; /* Change this to whatever width you want. */
+        padding-top: 50rem; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid black; /* This creates the border. Replace black with whatever color you want. */
+    }
+}
+
+.item-quant {
+    margin-right: 20rem;
+    background-color: var(--meeat-green);
+    padding: 10rem;
+    margin-left: -10rem;
+    padding-left: 60rem;
+    padding-right: 20rem;
+    border-top-right-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    font-weight: 900;
+}
+
+.item-price {
+    float: right;
+    margin-right: 20rem;
+    font-size: 36rem;
+    font-weight: bold;
+}
+
+
+.item-name {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+// item name full width
+.item-name-fw { 
+    font-size: 36rem;
+}
+
+// item name half width
+.item-name-hw {
+    font-size: 26rem;
+}
+
+.checkout-area {
+    h1, p {
+        color: white;
+    }
+    h1{
+        font-size: 50rem;
+        margin-top: 2%;
+        margin-left: 150rem;
+        margin-bottom: 2%;
+        font-weight: bold;
+    }
+    p {
+        font-size: 42rem;
+        font-weight: bold;
+        margin-left: 210rem;
+    }
+    .bg--img {
+        height: 28%;
+        width: 101%;
+        bottom: 0;
+    }
+    .checkout-total {
+        font-size: 42rem;
+        background-color: var(--meeat-green);
+        width: 85%;
+        color: black;
+        padding: 40rem;
+        font-weight: 900;
+        border-radius: 30rem;
+        margin-left: 60rem;
+        position: relative;
+        margin-top: 30rem;
+        text-align: center;
+        .total-price {
+            padding-left: 20rem;
+        }
+        .text-total {
+            position: absolute;
+            left: 50%;
+        }
+    }
+    .checkout-confirm, .bg--img {
+        position: absolute;
+    }
+    .checkout-confirm {
+        margin-left: 100rem;
+    }
+    .car-img {
+        margin-left: 275rem;
+        margin-bottom: 2%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding-left: 0px;
+    }
+}

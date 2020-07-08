@@ -1,0 +1,14 @@
+<div [ngSwitch]="currentScreen" class="bg--order-area">
+  <div *ngIf="!isBusy">
+    <img class="bg--banner" src={{bannerPath}} alt="">
+    <app-page *ngSwitchCase="'Page'" [page]="currentPageSides"></app-page>
+    <app-page *ngSwitchCase="'Page'" [page]="currentPageColdDrinks"></app-page>
+    <app-page *ngSwitchCase="'Page'" [page]="currentPageSalads"></app-page>
+    <app-page *ngSwitchCase="'Page'" [page]="currentPageDesserts"></app-page>
+  </div>
+  <div *ngIf="isBusy">
+    <app-busy *ngSwitchCase="'Page'" [page]="currentPageHotDrinks"></app-busy>
+    <app-busy *ngSwitchCase="'Page'" [page]="currentPageSnacks"></app-busy>
+    <app-busy *ngSwitchCase="'Page'" [page]="currentPageColdDrinks"></app-busy>
+  </div>
+</div>

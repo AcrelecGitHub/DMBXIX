@@ -1,0 +1,100 @@
+/*
+Font Weight Mapping
+100 Thin (Hairline)
+200 Extra Light (Ultra Light)
+300 Light
+400 Normal
+500 Medium
+600 Semi Bold (Demi Bold)
+700 Bold
+800 Extra Bold (Ultra Bold)
+900 Black (Heavy)
+*/
+@font-face {
+    font-family: 'Flama Condensed';
+    src: url('../fonts/FlamaCondensed-Light.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed';
+    src: url('../fonts/FlamaCondensed-Light.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed Book';
+    src: url('../fonts/FlamaCondensed-Book.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed';
+    src: url('../fonts/FlamaCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed';
+    src: url('../fonts/FlamaCondensed-Black.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed';
+    src: url('../fonts/FlamaCondensed-Medium.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed';
+    src: url('../fonts/FlamaCondensed-Extrabold.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed Basic';
+    src: url('../fonts/FlamaCondensed-Basic.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed';
+    src: url('../fonts/FlamaCondensed-Semibold.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed Basic';
+    src: url('../fonts/FlamaCondensed-Basic.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flama Condensed Book';
+    src: url('../fonts/FlamaCondensed-Book.woff2') format('woff2'),
+        url('../fonts/FlamaCondensed-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

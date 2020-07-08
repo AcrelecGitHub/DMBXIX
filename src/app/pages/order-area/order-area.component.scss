@@ -1,0 +1,14 @@
+.bg--order-area{
+    background-color: #efefef;
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+}
+.bg--banner {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 101%;
+    left: -1rem;
+    top: -5rem;
+}

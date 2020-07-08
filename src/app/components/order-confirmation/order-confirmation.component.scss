@@ -1,0 +1,22 @@
+.logo {
+	max-width: 260rem;
+  margin: 60rem auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+
+  h1,
+  h2 {
+		line-height: 1;
+    margin: 10rem auto;
+  }
+  h1 {
+		text-transform: uppercase;
+    font-size: 100rem;
+  }
+  h2 {
+		font-size: 54rem;
+		text-transform: capitalize;
+  }
+}

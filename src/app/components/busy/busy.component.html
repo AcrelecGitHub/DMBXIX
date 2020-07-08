@@ -1,0 +1,61 @@
+<div class="sides-list col-sm-12" *ngIf="title === 'Hot Drinks'">
+  <img class="bg__cookie" src="{{bgCookie}}" alt="">
+  <h1 class="title">
+    {{page.Name}}
+  </h1>
+  <div class="col-sm-6" *ngFor="let button of buttons|slice:0:4">
+    <div class="sides-product">
+      <img class="sides__img" src={{imagePath+button.Picture}} alt="">
+      <div class="content-area">
+        <div class="main-title">
+          <h2 class="product__title">{{button.Caption}}</h2>
+        </div>
+        <div class="item-description">
+          <div class="size-area col-sm-12" *ngFor="let button of button.Page.Buttons">
+            <span class="sides__size col-sm-2">{{button.Size}}</span>
+            <span class="sides__cal col-sm-8">{{button.Calories}}</span>
+            <span class="sides__price col-sm-2">{{button.Price / 100 | currency}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="salads-list col-sm-12" *ngIf="title === 'Snacks'">
+  <img class="bg_snacks" src="{{bgSnacks}}" alt="">
+  <h1 class="salads-title">
+    {{page.Name}}
+  </h1> 
+  <div class="col-sm-2 salads-product" *ngFor="let button of buttons|slice:0:5">
+    <h2 class="salads__caption">{{button.Caption}}</h2>
+    <img class="salads__img" src={{imagePath+button.Picture}} alt="">
+    <div class="item-description" style="width: 100%;">
+      <span class="salads_cal">{{button.Calories}}</span>
+      <span class="salads_price">{{button.Price / 100 | currency}}</span>      
+    </div>
+  </div> 
+</div>
+
+<div class="desserts-list col-sm-12" *ngIf="title === 'Cold Drinks'">
+  <h1 class="title">
+    {{page.Name}}
+  </h1> 
+  <div class="col-sm-6" *ngFor="let button of buttons|slice:0:6">
+    <div class="product desserts_width">
+      <img class="desserts__img" src={{imagePath+button.Picture}} alt="">
+      <div class="content-area">
+        <div class="main-title">
+          <h2 class="product__title">{{button.Caption}}</h2>
+        </div>
+        <div class="item-description">
+          <div class="size-area col-sm-12" *ngFor="let button of button.Page.Buttons">
+            <span class="sides__size col-sm-2">{{button.Size}}</span>
+            <span class="sides__cal col-sm-8">{{button.Calories}}</span>
+            <span class="sides__price col-sm-2">{{button.Price / 100 | currency}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>

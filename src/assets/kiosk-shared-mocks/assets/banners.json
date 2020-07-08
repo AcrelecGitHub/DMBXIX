@@ -1,0 +1,12 @@
+[
+    {
+        "ID": 1,
+        "Name": "ScreenSaver 1 - COD",
+        "Image": "mainVideo.ogg",
+        "Active": true,
+        "Interval": 5000,
+        "Order": 1,
+        "Skin": "FullHD",
+        "BannerType": "Slide"
+    }
+]

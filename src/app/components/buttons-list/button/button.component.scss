@@ -1,0 +1,128 @@
+@import '../../../../assets/styles/global.scss';
+
+.product {
+  position: relative;
+  display: flex;
+  margin: 5rem;
+  border-radius: 16rem;
+  border: 6rem solid white;
+  background-color: #FFF;
+  padding-bottom: 10rem;
+  &.selected {
+    border: 6rem solid var(--orange);
+    border-radius: 16rem;
+    box-sizing: border-box;
+    transition: all 0.14s ease-in-out;
+
+    &::after {
+      content: '\2713';
+      color: white;
+      font-size: 29rem;
+      position: absolute;
+      line-height: 1;
+      padding: 9rem 13rem;
+      font-weight: bold;
+      background: var(--orange);
+      right: 0;
+      bottom: 0;
+      border-top-left-radius: 6px;
+    }
+  }
+}
+.product__img {
+  width: 170rem;
+  height: 170rem;
+  float: left;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 10%;
+  box-shadow: var(--box-shadow-light);
+}
+.product__price,
+.product__title,
+.product__modifier,
+.product__cprice {
+  @extend %sub-headline;
+  margin: 0;
+  padding: 4rem;
+  font-size: 30rem;
+  text-align: center;
+  font-weight: bold;
+}
+.product__title {
+  line-height: 1;
+  padding-top: 6rem;
+  font-size: 36rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.product__price, .product__cprice {
+  background-color: var(--meeat-green);
+  border-radius: 15%;
+}
+
+.product__cal, .product__ccal { 
+  font-size: 18rem;
+}
+
+.product__desc, .product__cdesc { 
+  font-size: 14rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product__ccal, 
+.product__cprice, 
+.product__price, 
+.product__cal { 
+  position: absolute;  
+}
+
+.product__ccal, .product__cprice {
+  left: 0;
+}
+
+.product__ccal {
+  top: 72rem;
+}
+
+.product__cprice { 
+  top: 22rem;
+}
+
+.product__price {
+  top: 22rem;
+  right: 80rem;
+}
+
+.product__cal { 
+  top: 72rem;
+  right: 85rem;
+}
+
+.single, .combo {
+  width: 50%;
+}
+
+.single {
+  float: left;
+}
+.combo {
+  float: right;
+}
+
+.item-description {
+  width: 65%;
+  position: absolute;
+  height: 60%;
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+
+.content-area {
+  float: right;
+  margin-left: 5rem;
+  width: 60%;
+}

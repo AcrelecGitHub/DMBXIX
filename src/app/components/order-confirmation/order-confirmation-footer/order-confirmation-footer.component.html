@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="left">
+    <button class="continue" (click)="onContinueOrderClicked()">Continue Order</button>
+  </div>
+
+  <div class="payment-info">
+    <div class="container">
+      <span>subtotal:</span>
+      <span>{{subTotal/100 | currency}}</span>
+    </div>
+    <div class="container">
+      <span>tax:</span>
+      <span>{{tax/100 | currency}}</span>
+    </div>
+    <div class="container">
+      <span class="total-text">total to pay:</span>
+      <span class="total-amount">{{total/100 | currency}}</span>
+    </div>
+  </div>
+
+  <div class="right">
+    <button class="pay" (click)="onPayOrderClicked()">Pay Order</button>
+  </div>
+</div>

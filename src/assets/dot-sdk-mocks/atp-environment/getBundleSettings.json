@@ -1,0 +1,10 @@
+{
+  "defaultLanguage": "en",
+  "bridgePath": "",
+  "sharedFolderPath": "/assets/kiosk-shared-mocks",
+  "posInjectorPath": "http://192.168.1.181:9721/",
+  "backupPosInjectorPath": "",
+  "modernConnectorPath": "http://acrelec-reco.com",  
+  "modernConnectorFilesPath": "http://192.168.20.51:9426",
+  "modernConnectorWebSocket": "http://192.168.20.51:9426"
+} 

@@ -1,0 +1,44 @@
+[
+    {
+        "Image": "slide_01.png",
+        "Active": true,
+        "Interval": 5000,
+        "Order": 1,
+        "BannerType": "Slide"
+    },
+    {
+        "Image": "slide_02.png",
+        "Active": true,
+        "Interval": 5000,
+        "Order": 2,
+        "BannerType": "Slide"
+    },
+    {
+        "Image": "banner_01.png",
+        "Active": true,
+        "Interval": 5000,
+        "Order": 1,
+        "BannerType": "Banner"
+    },
+    {
+        "Image": "banner_02.png",
+        "Active": true,
+        "Interval": 5000,
+        "Order": 2,
+        "BannerType": "Banner"
+    },
+    {
+        "Image": "banner2_01.ogg",
+        "Active": true,
+        "Interval": 5000,
+        "Order": 1,
+        "BannerType": "Banner2"
+    },
+    {
+        "Image": "banner_02.png",
+        "Active": true,
+        "Interval": 5000,
+        "Order": 1,
+        "BannerType": "Banner3"
+    }
+]

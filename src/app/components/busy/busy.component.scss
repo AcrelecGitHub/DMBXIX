@@ -1,0 +1,298 @@
+@import '../../../assets/styles/global.scss';
+
+.menu-title {
+  margin: -5rem auto 10rem auto;
+}
+.title,
+.salads-title {
+  text-align: left;
+  margin-left: 60rem;
+  padding: 10rem 0;
+  font-size: 48rem;
+  font-family: Montserrat;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+.subtitle {
+  @extend %h2;
+}
+.title,
+.subtitle, 
+.drinks-title,
+.salads-title {
+  text-align: left;
+  margin-left: 10rem;
+  padding: 10rem 0;
+  color: black;
+  position: relative;
+  margin-top: 30rem;
+}
+
+.salads-title {
+  text-align: left;
+  color: white;
+  padding-left: 30rem;
+  margin-top: 5rem;
+}
+
+.drinks-title {
+  font-weight: bold;
+  font-size: 36rem;
+  padding-top: 50rem;
+}
+
+.popular-items {
+  position: absolute;
+  bottom: 35%;
+}
+
+.sides-product, 
+.product, 
+.drinks-product {
+  position: relative;
+  display: flex;
+  margin: 5rem;
+  border-radius: 16rem;
+  border: 6rem solid white;
+  background-color: #FFF;
+}
+
+.drinks-product {
+  background: none;
+  border: none;
+  color: white;
+  margin-bottom: 60rem;
+  margin-top: 20rem;
+}
+
+.sides-product {
+  border-radius: 16rem;
+  margin-top: 20rem;
+}
+
+.sides__img, 
+.product__img,
+.drinks__img,
+.desserts__img {
+  width: 170rem;
+  height: 170rem;
+  float: left;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 10%;
+  box-shadow: var(--box-shadow-light);
+}
+
+.sides__img,
+.drinks__img,
+.desserts__img {
+  width: 165rem;
+  height: 245rem;
+}
+
+.drinks__img {
+  border-radius: 50%;
+  border: 8px solid var(--meeat-green);
+  width: 120rem;
+  height: 120rem;
+}
+.product__price,
+.product__title,
+.product__modifier,
+.product__cprice {
+  @extend %sub-headline;
+  margin: 0;
+  padding: 4rem;
+  font-size: 30rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.product__title, 
+.drinks__caption {
+  line-height: 1;
+  padding-top: 6rem;
+  font-size: 30rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.drinks__caption { 
+  font-size: 24rem;
+}
+
+.product__price, .product__cprice {
+  background-color: var(--meeat-green);
+  border-radius: 15%;
+}
+
+.product__cal, .product__ccal { 
+  font-size: 18rem;
+}
+
+.product__desc, .product__cdesc { 
+  font-size: 14rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.product__ccal, 
+.product__cprice, 
+.product__price, 
+.product__cal { 
+  position: absolute;  
+}
+
+.product__ccal, .product__cprice {
+  left: 0;
+}
+
+.product__ccal {
+  top: 72rem;
+}
+
+.product__cprice { 
+  top: 22rem;
+}
+
+.product__price {
+  top: 22rem;
+  right: 80rem;
+}
+
+.product__cal { 
+  top: 72rem;
+  right: 85rem;
+}
+
+.single, .combo {
+  width: 50%;
+}
+
+.single {
+  float: left;
+  font-size: 16rem;
+  font-weight: bold;
+}
+.combo {
+  float: right;
+}
+
+.item-description {
+  width: 90%;
+  position: relative;
+  font-size: 20rem;
+}
+
+.content-area {
+  float: right;
+  margin-left: 5rem;
+  width: 60%;
+}
+
+.sides-list {
+  float: left;
+}
+
+.sides__price {
+  position: absolute;
+  font-size: 26rem;
+  font-weight: bold;
+  right: 0;
+  top: 10rem;
+  .product {
+    width: 50%;
+  }
+}
+
+.drinks-list {
+
+}
+
+.bg_snacks{
+  position: absolute;
+  z-index: -1;
+  width: 110%;
+  margin-left: -30rem;
+  height: 100%;
+}
+
+.salads-list {
+  color: white;
+  z-index: 4;
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 50rem;
+  h2 {
+    font-size: 24rem;
+    font-weight: bold;
+    height: 50rem;
+    padding-left: 25rem;
+    margin-bottom: 20rem;
+  }
+}
+
+.desserts-list {
+}
+
+.drinks_price {
+  position: absolute;
+  right: 15rem;
+}
+
+.salads-product {
+  text-align: center;
+  font-weight: bold;
+  margin: 15rem;
+  margin-top: 0;
+  margin-bottom: 0;  
+}
+
+.salads__img {
+  width: 100rem;
+  height: 100rem;
+  border-radius: 50%;
+}
+
+.salads_cal, .salads_price {
+  position: absolute;
+}
+
+.salads_cal {
+  left: 0%;
+}
+
+.salads_price { 
+  right: 0%;
+}
+
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
+
+.bg__cookie {
+  position: absolute;
+  top: -90%;
+  right: -35%;
+}
+
+.sides__size {
+  background-color: var(--meeat-green);
+  border-radius: 50%;
+  padding: 12rem;
+  font-size: 19rem;
+  font-weight: bold;
+}
+
+.sides__cal {
+  font-size: 19rem;
+  font-weight: bold;
+  padding-top: 15rem;
+}
+
+.size-area {
+  height: 58rem;
+}

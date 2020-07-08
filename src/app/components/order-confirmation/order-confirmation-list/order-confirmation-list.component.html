@@ -1,0 +1,9 @@
+<div class="basket__body">
+  <div class="header">
+    <span>your order</span>
+  </div>
+  <div class="basket__wrapper">
+    <app-order-confirmation-list-button *ngFor="let button of buttons" [button]="button">
+    </app-order-confirmation-list-button>
+  </div>
+</div>

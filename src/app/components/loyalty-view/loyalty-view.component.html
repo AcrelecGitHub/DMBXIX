@@ -1,0 +1,17 @@
+<img class="background" *ngIf="error" src="/assets/images/loyalty-view-failure_background.png" />
+
+<div class="header">
+    <div class="title">
+        <p [innerHtml]="'2019052901' | codTranslate"></p>
+        <p class="title-subtitle" [innerHtml]="'2019052902' | codTranslate"></p>
+    </div>
+</div>
+<div class="points-container" *ngIf="data">
+    <p class="points" [class.points-little]="isLittlePoints" [class.points-very-little]="isVeryLittlePoints" [innerHtml]="data.cardBalance"></p>
+    <p class="points-text" [innerHtml]="'20190717014' | codTranslate"></p>
+</div>
+<img class="points-logo" src="/assets/images/brand-logo.png" />
+<p class="info-text" [innerHtml]="'20190717015' | codTranslate"></p>
+<div class="footer">
+    <p class="success-text" [innerHtml]="'20190717013' | codTranslate"></p>
+</div>

@@ -1,0 +1,14 @@
+{
+  "AppIdentifier": "com.acrelec.cfedot-mbirdintegration",
+  "AppSignature": "9987c38eb4f241b480787840ca48690c",
+  "AppKey": "61fb3dcd3c484aa484d9dce01600d5a2",
+  "AppVersion": "1.0.0",
+  "AppVersionDetails": "",
+  "IsBeta": true,
+  "SharedFolderPath": "C:\\Acrelec\\Apps\\com.acrelec.cfedot-mbirdintegration\\shared",
+  "AppFolderPath": "C:\\Acrelec\\Apps\\com.acrelec.cfedot-mbirdintegration\\9987c38eb4f241b480787840ca48690c\\bin",
+  "ChannelsFolderPath": [],
+  "AppName": "cfe dot-mbird integration",
+  "AppCategory": "testdemo",
+  "AppType": "webapp"
+}

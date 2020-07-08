@@ -1,0 +1,31 @@
+<div class="container order__list">
+    <h1>Is your order correct?</h1>
+    <img class="background" [src]="logoPath" />
+    <div class="checkout-list row" #orderList *ngIf="items.length">
+      <ul class="col-xs-12">
+        <li *ngFor="let item of items" [ngClass]=" length ? 'col-xs-12' : 'col-xs-6' ">
+            <span class="item-quant">{{item.Quantity}}</span>
+            <span class="item-name" 
+            [ngClass]=" length ? 'item-name-fw' : 'item-name-hw'">{{item.Name}} </span>
+            <span class="item-price">{{item.TotalPrice | currency }}</span>
+            <ul>
+              <li *ngFor="let item of item.items" 
+              class="item-modifiers" 
+              [ngClass]="length?'item-modifiers-fw':'item-modifiers-hw'">{{(item.Name).toLowerCase()}}</li>
+            </ul>
+        </li>
+      </ul>      
+    </div>
+  </div>
+  <div class="checkout-area">
+      <img class="bg--img" [src]="bgPath" alt="">
+    <div class="checkout-total">
+      <span>Please prepare TOTAL:</span>
+      <span class="total-price">{{orderData.TotalValue | currency }}</span>
+    </div>
+    <div class="checkout-confirm">
+        <h1>Thank you for your order</h1>
+        <img class="car-img" [src]="carImg" >
+        <p>See you at the window</p>
+    </div>
+</div>

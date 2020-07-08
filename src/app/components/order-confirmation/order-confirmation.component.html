@@ -1,0 +1,9 @@
+<img src="../../../assets/images/logos/logo_inout.png" class="logo" />
+<div class="container">
+  <h1 class="send-order">Confirmation</h1>
+  <h2 class="sub-headline">Please confirm your order</h2>
+  <app-order-confirmation-list [buttons]="buttons"></app-order-confirmation-list>
+  <app-order-confirmation-footer [subTotal]="subTotal" [tax]="tax" [total]="total"
+    (continueOrderClicked)="onContinueOrderClicked()" (payOrderClicked)="onPayOrderClicked()">
+  </app-order-confirmation-footer>
+</div>

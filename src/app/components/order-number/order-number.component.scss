@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.order-number {
+	margin-top: 100rem;
+  box-shadow: var(--box-shadow-lighter);
+	border: 2px dashed var(--medium-gray);
+	border-radius: 10%;
+  padding: 220rem 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+}
+h1, h2 {
+	margin: 0;
+}
+h2 {
+	font-size: 90rem;
+}
+h1 {
+	font-size: 120rem;
+	margin: 30rem;
+}

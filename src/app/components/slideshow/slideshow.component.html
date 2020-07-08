@@ -1,0 +1,10 @@
+<ng-template ngFor let-slide [ngForOf]="slides">
+  <div *ngIf="current == slide" [@active] [ngSwitch]="slide.mimeType" class="slide-item">
+      <video class="video" [src]="bannersPath+slide.Image"
+      loop muted autoplay oncanplay="this.play()" 
+		  onloadedmetadata="this.muted = true">
+      </video>
+      <!-- <img *ngSwitchCase="'image'" class="image" [src]="bannersPath+slide.Image"/>
+      <img *ngSwitchDefault class="image" [src]="bannersPath+slide.Image"/> -->
+  </div>
+</ng-template>

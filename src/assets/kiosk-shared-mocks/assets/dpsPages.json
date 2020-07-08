@@ -1,0 +1,28 @@
+{
+  "PromoGroupList": [],
+  "PromoList": [
+    {
+      "Type": "ProductDiscount",
+      "ID": 1,
+      "PageID": "Promo1",
+      "SubType": 0,
+      "Active": 1,
+      "Description": {
+        "MinUAmount": 4,
+        "Qty": 0,
+        "LblName": "Free Coffee",
+        "LblNoItem": "Promo unavailable at this time",
+        "Barcode": "123456789",
+        "PosDiscountID": 120427,
+        "PromoButtonList": [
+          {
+            "ButtonType": "FreeItem",
+            "ID": 6003,
+            "ForcePriceIN": 0,
+            "ForcePriceOUT": 0
+          }
+        ]
+      }
+    }
+  ]
+}

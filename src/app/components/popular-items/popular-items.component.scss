@@ -1,0 +1,88 @@
+.pop__img {
+  width: 190rem;
+  height: 190rem;
+  border-radius: 50%;
+  float: left;
+  box-shadow: var(--box-shadow-light);
+  z-index: 1;
+  margin-left: 30rem;
+}
+.title {
+  font-size: 48rem;
+  text-align: left;
+  margin-left: 60rem;
+  margin-bottom: 10rem;
+  font-weight: bold;
+  margin-top: -10rem;
+}
+
+.pop__price {
+  width: 160rem;
+  background-color: var(--meeat-green);
+  position: absolute;
+  left: 175rem;
+  z-index: 0;
+  height: 160rem;
+  border-radius: 50%;
+  margin: 0;
+  padding: 4rem;
+  font-size: 32rem;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.pop__dollar {
+  font-size: 32rem;
+  position: absolute;
+  left: 55rem;
+  bottom: 60rem;
+  font-weight: bold;
+}
+
+.pop__cents {
+  font-size: 25rem;
+}
+
+.product {
+  position: relative;
+  display: inline-flex;
+  margin: 10rem;
+  width: 325rem;
+  &.selected {
+    border: 6rem solid var(--orange);
+    border-radius: 16rem;
+    box-sizing: border-box;
+    transition: all 0.14s ease-in-out;
+
+    &::after {
+      content: '\2713';
+      color: white;
+      font-size: 29rem;
+      position: absolute;
+      line-height: 1;
+      padding: 9rem 13rem;
+      font-weight: bold;
+      background: var(--orange);
+      right: 0;
+      bottom: 0;
+      border-top-left-radius: 6px;
+    }
+  }
+}
+.pop__title {
+  line-height: 1;
+  padding-top: 18rem;
+  padding-left: 18rem;
+  position: absolute;
+  left: 30rem;
+  font-size: 30rem;
+  text-transform: capitalize;
+  top: 160rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.bg--popular{
+  background-color: #efefef;
+  height: 555rem;
+}

@@ -1,0 +1,146 @@
+:host {
+    background-color: #FFFFFF;
+
+    box-shadow: 0 3rem 6rem 0 rgba($color: #000000, $alpha: 0.16);
+    border-radius: 2px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 236rem;
+    left: 200.5rem;
+
+    width: 100rem;
+    height: 100rem;
+}
+
+.header {
+    margin: 35rem 0;
+    justify-content: center;
+    font-family: 'DIN Bold', 'Arial';
+    color: #3b3b3b;
+    font-weight: 700;
+    font-size: 50rem;
+    justify-content: center;
+    display: flex;
+}
+
+.title {
+    display: block;
+    text-align: right;
+    font-family: 'DIN Bold', 'Arial';
+    color: #3b3b3b;
+    font-weight: 700;
+    font-size: 50rem;
+}
+
+.title-subtitle {
+    font-family: 'DIN Regular', 'Arial';
+    color: #eb7c0c;
+    font-weight: normal;
+    font-size: 20rem;
+}
+
+
+
+.points-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.points {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 117rem;
+    height: 117rem;
+
+    border-radius: 2px;
+
+    background-color: #eb7c0c;
+    color: #ffffff;
+
+    font-family: 'BlockBE-Condensed', 'Arial';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 65rem;
+    font-stretch: condensed;
+
+
+    &.points-little {
+        font-size: 50rem;
+    }
+
+    &.points-very-little {
+        font-size: 40rem;
+    }
+}
+
+.points-text {
+    font-family: 'DIN Bold', 'Arial';
+    margin-left: 14rem;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50rem;
+    font-stretch: condensed;
+    align-items: center;
+    text-align: left;
+    color: #3b3b3b;
+}
+
+.points-logo {
+    margin-top: 42rem;
+    width: 79rem;
+    height: 79rem;
+}
+
+:host.info .header {
+    font-size: 60rem;
+}
+
+:host.error .logo {
+    display: none;
+}
+
+.info-text {
+    margin-top: 45rem;
+    font-family: 'DIN Regular', 'Arial';
+    color: #3b3b3b;
+    font-weight: normal;
+    font-size: 20rem;
+}
+
+.footer {
+    color: #FFFFFF;
+    font-family: 'BlockBE-Condensed', 'Arial';
+    font-weight: 700;
+    font-size: 35rem;
+    background-color: #ee7700;
+    padding: 0 16rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    height: 76rem;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+}

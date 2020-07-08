@@ -1,0 +1,52 @@
+:host {
+    background-color: #FFFFFF;
+    position: relative;
+
+    border-radius: 2px;
+
+    box-shadow: 0 3rem 6rem 0 rgba($color: #000000, $alpha: 0.16);
+    overflow: hidden;
+}
+
+.header {
+    color: #2c2c2c;
+    font-family: 'DIN Bold', 'Arial';
+    font-weight: 700;
+    font-size: 40rem;
+
+    padding-left: 55rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    height: 76rem;
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.footer {
+    color: #FFFFFF;
+    font-family: 'BlockBE-Condensed', 'Arial';
+    font-weight: 700;
+    font-size: 35rem;
+    background-color: #ee7700;
+    padding: 0 16rem;
+
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    height: 76rem;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 0;
+
+    &>.total-text {
+        flex-grow: 1;
+    }
+}

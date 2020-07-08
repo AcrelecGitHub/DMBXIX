@@ -1,0 +1,91 @@
+:host {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 16rem;
+    width: 485rem;
+    box-sizing: border-box;
+}
+
+.quantity {
+    color: #ee7700;
+    font-family: 'Montserrat', 'Arial-BoldMT', 'Arial';
+    font-weight: bold;
+    font-size: 21rem;
+
+    width: 28rem;
+    height: 28rem;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #454545;
+}
+
+ul {
+    margin: 0;
+    padding: 0 0 0 10rem;
+}
+
+li {
+    list-style: none;
+}
+
+.description {
+    font-family: 'DIN Regular', 'Arial';
+    font-weight: normal;
+    font-size: 20rem;
+    overflow: hidden;
+    color: #454545;
+    line-height: 24rem;
+
+    opacity: 0.9;
+
+    &>* {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &>*:first-child {
+        font-family: 'DIN Bold', 'Arial';
+        opacity: 1;
+        font-size: 27rem;
+        line-height: 33rem;
+        font-weight: 700;
+    }
+
+    .choice {
+        opacity: 0.4;
+    }
+
+    &.voided {
+        text-decoration: line-through;
+    }
+
+    flex-grow: 1;
+    margin: 0 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.price {
+    color: #313030;
+    font-family: 'DIN Regular', 'Arial';
+    font-weight: normal;
+    font-size: 25rem;
+
+    width: 114rem;
+    height: 30rem;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

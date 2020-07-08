@@ -1,0 +1,23 @@
+<div class="bg--popular">
+  <div class="menu-title" *ngIf="showRecommendations">
+    <h1 class="title">
+      RECOMMENDATIONS
+    </h1>
+  </div>
+  <div class="product" *ngFor="let button of recommendations|slice:0:3; let ind=index;">
+    <img class="pop__img" [src]="imagePath+button.Picture" alt="Image of the buttons">
+    <h2 class="pop__title">{{button.Caption}}</h2>
+    <span class="pop__price"><span class="pop__dollar">{{button.Price / 100 | currency}}</span></span>
+  </div>
+
+  <div class="menu-title" *ngIf="showPopulars">
+    <h1 class="title">
+      Popular in your Meeeat<span class="meat--green">!</span>
+    </h1>
+  </div>
+  <div class="product" *ngFor="let button of populars|slice:0:3; let ind=index;">
+    <img class="pop__img" [src]="imagePath+button.Picture" alt="Image of the buttons">
+    <h2 class="pop__title">{{(button.Caption).toLowerCase()}}</h2>
+    <span class="pop__price"><span class="pop__dollar">{{button.Price / 100 | currency}}</span></span>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+@import '../../../assets/styles/global.scss';
+
+:host {
+  height: 1240rem;
+  margin: 0 -30rem 0 0;
+
+  .container {    
+    height: 1180rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    margin-top: -10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    width: unset;
+    app-button {
+      width: 500rem;
+    }
+    &.top3 {
+      overflow-y: hidden;
+			justify-content: center;
+			padding: 40rem;
+
+    }
+  }
+}
+
+:host:not(.single) {
+  .container {
+    height: 805rem;
+    overflow: hidden;
+  }
+}

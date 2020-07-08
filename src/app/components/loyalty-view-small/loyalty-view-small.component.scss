@@ -1,0 +1,45 @@
+:host {
+    background-color: #eb7c0c;
+
+    box-shadow: 0 3rem 6rem 0 rgba($color: #000000, $alpha: 0.16);
+    border-radius: 2px;
+}
+
+.logo {
+    position: absolute;
+    top: 7.25rem;
+    right: 33.5rem;
+
+    width: 33.5rem;
+    height: 33.5rem;
+}
+
+.points {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-family: 'Arial-BoldMT', 'Arial';
+    font-weight: 700;
+    font-size: 30rem;
+    color: #FFFFFF;
+
+    animation: blinking 1000ms infinite alternate;
+}
+
+@keyframes blinking {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 0.9;
+    }
+}

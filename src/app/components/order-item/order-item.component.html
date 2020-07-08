@@ -1,0 +1,18 @@
+<ng-template #subItemTemplateRef let-orderItem>
+  <li [class.choice]="orderItem.type === 'choice'"
+      [innerHtml]="(orderItem.quantity > 1 ? orderItem.quantity + ' x ' : '') + orderItem.name"></li>
+  <ul *ngIf="orderItem.items.length">
+      <ng-template ngFor [ngForOf]="orderItem.items" [ngForTemplate]="subItemTemplateRef"></ng-template>
+  </ul>
+</ng-template>
+
+<div class="quantity">
+  <p>{{ orderItem.quantity }}</p>
+</div>
+<ul class="description" [class.voided]="orderItem.voided">
+  <li [innerHtml]="orderItem.name"></li>
+  <ng-template ngFor [ngForOf]="orderItem.items" [ngForTemplate]="subItemTemplateRef"></ng-template>
+</ul>
+<div class="price" *ngIf="!orderItem.voided">
+  <p [innerHtml]="orderItem.totalPrice.value > 0 ? (orderItem.totalPrice.value | codCurrency) : '2019071701' | codTranslate"></p>
+</div>

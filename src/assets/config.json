@@ -1,0 +1,5 @@
+{
+  "useMocksForEnvironment": true,
+  "useMocksForPay": true,
+  "useMocksForPos": false
+}

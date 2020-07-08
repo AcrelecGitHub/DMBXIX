@@ -1,0 +1,16 @@
+{
+    "id": "COD1",
+
+    "arisePath": "http://192.168.0.180:8091/",
+    "bridgePath": "http://192.168.0.180:9723/",
+    "assetsPath": "http://192.168.0.180:4500/dot19/assets/",
+
+    "currencySymbol": "€",
+    "currencySymbolBefore": false,
+    "currencyDecimals": 2,
+    "decimalSeparator": ",",
+
+    "finishedOrderTimeout": 3000,
+    "productsAnimationInterval": 5000,
+    "idleTimeout": 600000
+}

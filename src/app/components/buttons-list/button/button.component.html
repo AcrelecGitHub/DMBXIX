@@ -1,0 +1,14 @@
+<div class="product" [ngClass]="{selected:button.Selected}">
+	<img class="product__img" [src]="picture" alt="">
+	<div class="content-area">
+		<div class="main-title">
+			<h2 class="product__title">{{button.Caption}}</h2>
+		</div>
+		<div class="item-description">
+			<div class="single">
+				<span class="product__cprice">{{button.Price / 100 | currency}}</span>
+				<span class="product__ccal">{{button.Calories}}</span>
+			</div>
+		</div>
+	</div>
+</div>

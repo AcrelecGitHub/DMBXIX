@@ -1,0 +1,50 @@
+:host {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+.footer>.logo {
+    content: url('/assets/images/logo_acrelec.png');
+    object-fit: contain;
+    width: 50%;
+}
+
+.header,
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin: 50rem;
+
+    &>.logo {
+        flex: 1 0 0;
+        margin: 10rem 30rem;
+    }
+
+    &>.details {
+        display: flex;
+        flex: 2 0 0;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        margin: 30rem 10rem;
+        text-align: end;
+    }
+}
+
+.progress {
+    margin: 0 100rem;
+    padding: 0;
+
+    flex-grow: 1;
+
+    & li {
+        margin: 20rem;
+    }
+}

@@ -1,0 +1,41 @@
+<div *ngIf="showBanner" class="banner__img">
+  <img width="100%" [src]="picture" alt="">  
+</div>
+<div *ngIf="orderArea">
+  <div class="container order__list">
+    <h1>Order List</h1>
+    <div class="order-view-items" 
+    #orderList 
+    *ngIf="items && items.length"
+    [@slide]="isOpen">
+      <ul>
+        <!-- <li *ngFor="let item of (items | slice:items.length - 3);"> -->
+        <li *ngFor="let item of items"  class="current-task-info">
+          <span class="item-quant">{{item.Quantity}}</span>
+          <span class="item-name">{{(item.Name).toLowerCase()}} </span>
+          <span class="item-price">{{item.TotalPrice | currency }}</span>
+          <ul>
+            <li *ngFor="let item of item.items">{{(item.Name).toLowerCase()}}</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="total">
+        <span>Total</span>
+        <span class="total-price">{{totalValue | currency }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="container suggestions">
+    <h1>For you</h1>
+    <div *ngFor="let button of buttons; let index = index">
+      <div class="for-you ease-in-up" *ngIf="(index + 1) % randomNumber === 0">
+        <img class="rec__img" [src]="imagePath+button.Image" alt="Image of the buttons">
+        <div class="rec_content">
+          <h2 class="rec__title">{{button.Caption}}</h2>
+          <span class="rec__cal">{{button.Calories}}</span>
+          <span class="rec__price"><span class="rec__dollar">{{button.Price / 100 | currency}}</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

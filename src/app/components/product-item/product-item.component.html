@@ -1,0 +1,11 @@
+<div class="image-container">
+  <img class="product-image" [src]="image" onerror="this.src='/assets/images/no-image.png'" />
+</div>
+<div class="text-container">
+  <div class="product-price" *ngIf="showPrice">
+      <p [innerHtml]="price | codCurrency:totalFormat"></p>
+  </div>
+  <div class="product-title" [class.product-title-left]="showPrice">
+      <p codFit [innerHtml]="title"></p>
+  </div>
+</div>

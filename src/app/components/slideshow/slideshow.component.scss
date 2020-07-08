@@ -1,0 +1,21 @@
+:host {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 0 3rem 6rem 0 rgba($color: #000000, $alpha: 0.16);
+}
+
+.slide-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &>* {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,28 @@
+<div class="basket__item">
+  <div class="item__info">
+    <div class="item__img">
+      <img [src]="picture" alt="" />
+    </div>
+    <div class="item__details">
+      <!-- <button class="change button-ghost-medium">
+        Change
+      </button> -->
+      <h3 class="title">
+        {{ button.Caption }}
+      </h3>
+      <div *ngIf="button.hasModifiers">
+        <div *ngFor="let modifier of button.ModifiersPage.Modifiers" class="subitem">
+          <div class="subitem__wrapper">
+            <h3 class="subitem__title">{{getSelectedModifiers(modifier)}}</h3>
+          </div>
+          <!-- <button class="button-ghost-small">Customize</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="item__wrapper">
+    <div class="item__quantity">
+    </div>
+    <div class="item__price">{{button.Price / 100 | currency}}</div>
+  </div>
+</div>

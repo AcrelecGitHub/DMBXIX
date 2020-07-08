@@ -1,0 +1,8 @@
+<div class="header">
+  <p [innerHtml]="'2019080502' | codTranslate"></p>
+</div>
+
+<div class="footer">
+  <p class="total-text" [innerHtml]="'2019080503' | codTranslate"></p>
+  <p class="total-value" [innerHtml]="orderView?.totals?.value | codCurrency"></p>
+</div>
