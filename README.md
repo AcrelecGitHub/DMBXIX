@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# DMBXIX
+
+This repository is the starting point to learn about Acrelec DOT project.
+
+## What will you find here
+- [Welcome Screen](docs/Welcome/README.md)
+- [Modern Connector Steps](docs/ModernConnector/README.md)
+- [Demos](demos)
+
+# Services
+- App Settings Service
+    ~ flagShipData(), AB Tasty analytics API to decide which screen to be displayed for different visitors
+
+- Modern Connector Service
+
+- Recommendations Service
