@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { AtpEnvironmentService, MocksOptions, IBundleSettings, PosServingLocation } from 'dotsdk';
 import { Observable, Subject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -98,10 +99,11 @@ export class AppSettingsService {
     this.isSpecialOfTheMonthActive = Math.random() < 0.5;
 
     // Load Apps Settings:
-    const appConfig = await this.httpClient.get('/assets/config.json').toPromise();
-    this.useMocksForEnvironment = appConfig['useMocksForEnvironment'];
-    this.useMocksForPay = appConfig['useMocksForPay'];
-    this.useMocksForPos = appConfig['useMocksForPos'];
+    // const appConfig = await this.httpClient.get('/assets/config.json').toPromise();
+    const appConfig = environment;
+    this.useMocksForEnvironment = appConfig.useMocksForEnvironment;
+    this.useMocksForPay = appConfig.useMocksForPay;
+    this.useMocksForPos = appConfig.useMocksForPos;
 
     // Load Apps BundleSettings from ATP with the use of AtpEnvironmentService
     // Use MockOptions object to set it's (not) use of mocks:

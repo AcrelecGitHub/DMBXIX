@@ -75,7 +75,7 @@ export class OrderAreaComponent implements OnInit {
 
   // This is to change the template to busy template when Flagship is returning the campaign Flag
   public async carBusyFlag(){
-    this.campaignData = await this.http.get<any>(`${this.appSettings.modernConnectorFilesPath}/devices/LANE1/COD1`).subscribe(data => {      
+    this.campaignData = await this.http.get<any>(`${this.appSettings.modernConnectorFilesPath}/devices/LANE1/DMB1`).subscribe(data => {      
       const metaData = data;
       const campaigns = metaData.metadata.campaigns;
       if (campaigns) {

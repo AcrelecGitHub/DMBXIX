@@ -7,7 +7,7 @@ import {
   DotCatalogLoader
 } from 'dotsdk';
 import { AppSettingsService } from './app-settings.service';
-import { DotCatalog } from "dotsdk/data/models/dot-catalog.model";
+import { DotCatalog } from "dotsdk/src/data/models/dot-catalog.model";
 
 @Injectable({
   providedIn: 'root'
