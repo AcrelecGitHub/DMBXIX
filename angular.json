@@ -51,6 +51,7 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
+              "vendorSourceMap": true,
               "buildOptimizer": true,
               "budgets": [
                 {

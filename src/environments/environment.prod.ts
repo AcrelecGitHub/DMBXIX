@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  useMocksForEnvironment: true,
+  useMocksForEnvironment: false,
   useMocksForPay: false,
   useMocksForPos: false
 };

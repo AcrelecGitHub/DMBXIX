@@ -32,7 +32,7 @@ export class WelcomeComponent implements OnInit {
 
   banners = DotBannersLoader.getInstance().loadedModel;
   
-  public async ngOnInit() {
+  public ngOnInit() {
     this.getMetaData();
   }
 
@@ -41,7 +41,7 @@ export class WelcomeComponent implements OnInit {
       console.log("MetaData",res);
       this.carSensor = true;
       this.goToNextPage();
-    });
+    }, (err) => console.log('err', err));
   }
 
   public ngOnDestroy() {

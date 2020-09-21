@@ -5,26 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
-import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+import { SocketIoModule } from 'ngx-socket-io';
 
 import { AppComponent } from './app.component';
 
 import * as pages from './pages/';
 import * as components from './components';
 import * as pipes from './pipes';
-import bundleSettings from '../assets/dot-sdk-mocks/atp-environment/getBundleSettings.json';
-
 import { AppSettingsService, ContentService } from './services/';
-import { ModernConnectorService } from './services/modern-connector.service';
-
-const config: SocketIoConfig = { url: `${bundleSettings.modernConnectorWebSocket}`, options: {
-  query: {
-    deviceName: "DMB1", 
-    deviceType: "DMB",
-    deviceGroup: "LANE1",
-    defaultScreen: "DMB1"
-  }
-}};
 
 @NgModule({
   declarations: [
@@ -38,18 +26,19 @@ const config: SocketIoConfig = { url: `${bundleSettings.modernConnectorWebSocket
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
-    SocketIoModule.forRoot(config),
+    SocketIoModule,
     BrowserAnimationsModule
   ],
   providers: [
     {
       provide: APP_INITIALIZER,
       useFactory: (appSettingsService: AppSettingsService, 
-        contentService: ContentService) => () => appSettingsService.initialize().then(success => contentService.initialize(), error => {}),
+        contentService: ContentService) => () => appSettingsService.initialize().then(async (success) => {
+          await contentService.initialize();
+        }, error => {}),
       deps: [AppSettingsService, ContentService],
       multi: true
-    },
-    ModernConnectorService
+    }
   ],
   bootstrap: [AppComponent]
 })
